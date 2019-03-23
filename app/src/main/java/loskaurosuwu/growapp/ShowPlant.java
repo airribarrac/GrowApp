@@ -33,6 +33,8 @@ public class ShowPlant extends AppCompatActivity {
         imageView.setImageResource(getResources().getIdentifier(c.getString(2),"drawable",getPackageName()));
         TextView cnt = findViewById(R.id.weirdName);
         cnt.setText(c.getString(1));
+        TextView regado = findViewById(R.id.Regado);
+        regado.setText("Regado "+c.getString(3)+".");
 
     }
 }
