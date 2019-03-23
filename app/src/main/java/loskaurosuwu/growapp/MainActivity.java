@@ -22,10 +22,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button houseform = findViewById(R.id.houseformbutton);
+        houseform.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                houseFormClick();
+            }
+        });
+
+
     }
     public void catalogButtonClick(){
         Log.v("presione","catalog");
         Intent i = new Intent(this,CatalogoPlantas.class);
+        startActivity(i);
+    }
+
+    public void houseFormClick(){
+        Intent i = new Intent(this,HouseForm.class);
         startActivity(i);
     }
 }
