@@ -7,6 +7,13 @@
     android:background="@drawable/back3"
     tools:context="loskaurosuwu.growapp.MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#dddddf"
+        app:srcCompat="@drawable/back2" />
+
     <Button
         android:id="@+id/catalogbutton"
         android:layout_width="wrap_content"
