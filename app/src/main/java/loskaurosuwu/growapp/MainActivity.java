@@ -22,10 +22,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button houseform = findViewById(R.id.houseformbutton);
+        houseform.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                houseFormClick();
+            }
+        });
+
+        Button request = findViewById(R.id.reciclajeOP);
+        request.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                catalogClick();
+            }
+        });
+
     }
     public void catalogButtonClick(){
         Log.v("presione","catalog");
         Intent i = new Intent(this,CatalogoPlantas.class);
+        startActivity(i);
+    }
+
+    public void houseFormClick(){
+        Intent i = new Intent(this,HouseForm2.class);
+        startActivity(i);
+    }
+
+    public void catalogClick(){
+        Intent i = new Intent(this,Reciclaje2.class);
         startActivity(i);
     }
 }
