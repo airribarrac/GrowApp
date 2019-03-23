@@ -9,14 +9,12 @@
         android:id="@+id/plant_name_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/purificationlist" />
 
     <TextView
         android:id="@+id/plant_price_text"
@@ -24,8 +22,63 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/purificationlist" />
+
+    <LinearLayout
+        android:id="@+id/purificationlist"
+        android:layout_width="188dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/bencbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#a00"
+            android:duplicateParentState="false"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/formbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#880"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/cloretbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#0a0"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/xilbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#088"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/amonbut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="#00a"
+            android:enabled="false" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
