@@ -2,4 +2,5 @@
     <string name="app_name">GrowApp</string>
     <string name="title_activity_catalogo_plantas">CatalogoPlantas</string>
     <string name="title_activity_reciclaje2">Reciclaje2</string>
+    <string name="title_activity_house_form2">HouseForm2</string>
 </resources>

@@ -14,7 +14,8 @@
         android:text="Completa los datos de tu hogar"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.WindowTitle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView3"

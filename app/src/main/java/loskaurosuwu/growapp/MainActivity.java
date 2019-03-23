@@ -30,6 +30,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button request = findViewById(R.id.reciclajeOP);
+        request.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                catalogClick();
+            }
+        });
 
     }
     public void catalogButtonClick(){
@@ -39,7 +46,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void houseFormClick(){
-        Intent i = new Intent(this,HouseForm.class);
+        Intent i = new Intent(this,HouseForm2.class);
+        startActivity(i);
+    }
+
+    public void catalogClick(){
+        Intent i = new Intent(this,Reciclaje2.class);
         startActivity(i);
     }
 }
