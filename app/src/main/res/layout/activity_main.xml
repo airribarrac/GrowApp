@@ -4,27 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back3"
     tools:context="loskaurosuwu.growapp.MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/pointNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#dddddf"
-        app:srcCompat="@drawable/back2" />
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/catalogbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Plant catalog"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="35dp" />
+        app:layout_constraintTop_toBottomOf="@+id/pointNumber" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/reciclajeOP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -33,13 +35,15 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/catalogbutton" />
 
-    <Button
-        android:id="@+id/houseformbutton"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="HouseForm"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/reciclajeOP"
+        app:layout_constraintStart_toStartOf="@+id/reciclajeOP"
+        app:layout_constraintTop_toBottomOf="@+id/reciclajeOP" />
 </android.support.constraint.ConstraintLayout>
