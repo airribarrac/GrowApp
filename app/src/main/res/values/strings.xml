@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">GrowApp</string>
     <string name="title_activity_catalogo_plantas">CatalogoPlantas</string>
+    <string name="title_activity_reciclaje2">Reciclaje2</string>
 </resources>

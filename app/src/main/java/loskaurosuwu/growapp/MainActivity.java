@@ -15,10 +15,17 @@ public class MainActivity extends AppCompatActivity {
         Log.v("esto es una prueba","ola ola");
             setContentView(R.layout.activity_main);
         Button catalogo = findViewById(R.id.catalogbutton);
+        Button reciclaje = findViewById(R.id.reciclajeOP);
         catalogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 catalogButtonClick();
+            }
+        });
+        reciclaje.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                reciclajeButtonClick();
             }
         });
 
@@ -28,4 +35,10 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,CatalogoPlantas.class);
         startActivity(i);
     }
+    public void reciclajeButtonClick(){
+        Log.v("presione","reciclaje");
+        Intent i = new Intent(this,Reciclaje2.class);
+        startActivity(i);
+    }
+
 }
