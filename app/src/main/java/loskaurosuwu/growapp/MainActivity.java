@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mFlowerData = new FlowerData("Recicla", getString(R.string.description_flower_daisy),
                 R.drawable.solicita);
         mFlowerList.add(mFlowerData);
-        mFlowerData = new FlowerData("Químicos", getString(R.string.description_flower_sunflower),
+        mFlowerData = new FlowerData("Contaminantes", getString(R.string.description_flower_sunflower),
                 R.drawable.quimicos);
         mFlowerList.add(mFlowerData);
         mFlowerData = new FlowerData("Puntos de reciclaje", getString(R.string.description_flower_daffodil),
