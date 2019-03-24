@@ -22,7 +22,7 @@ public class DBHelper {
     // Nombre de la base de datos, y tabla asociada
     private static final String DATABASE_NAME = "MiDB";
     private static final String DATABASE_TABLE = "plantas";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
     // Las constantes que representan las columnas de la tabla
     private static final String FILAID = "_id";
     private static final String NOMBRE = "nombre";
@@ -54,10 +54,7 @@ public class DBHelper {
             LUZ + " text not null, " +
             AMBI + " text not null, " +
             PRECIO + " integer not null," +
-            BENCENO + " text not null );" +
-            "create table usuarios(" +
-            "username text primary key," +
-            "puntos integer default 0 not null);";
+            BENCENO + " text not null );" ;
     private final Context contexto; // Contexto de la aplicacion
     private DatabaseHelper Helper; // Clase interna para acceso a base de datos SQL
     private SQLiteDatabase db; // La base de datos SQL
@@ -79,6 +76,9 @@ public class DBHelper {
                 Log.w(TAG, "Creando la base de datos");
                 // Emite el comando SQL para crear la base de datos
                 db.execSQL(DATABASE_CREATE);
+                db.execSQL("create table usuarios(" +
+                        "username text primary key , " +
+                        "puntos integer default 0 not null );");
                 InputStream is = context.getResources().openRawResource(R.raw.baseuwu);
                 InputStreamReader isr = new InputStreamReader(is);
                 BufferedReader br = new BufferedReader(isr);
@@ -154,8 +154,8 @@ public class DBHelper {
                 FILAID+"= ?",new String[]{String.valueOf(id)},null,null,null);
     }
     public void agregarSaldo(String usuario,int cantidad){
-        String consulta = "update usuarios set puntos = puntos + ? where username = ?;";
-        db.rawQuery(consulta,new String[]{String.valueOf(cantidad),usuario});
+        String consulta = "update usuarios set puntos = puntos + "+cantidad+" where username = ?;";
+        db.execSQL(consulta,new String[]{usuario});
     }
     public boolean comprarPlanta(String usuario,int plantID){
         Cursor a = db.query("plantas",new String[]{PRECIO},
@@ -168,10 +168,16 @@ public class DBHelper {
             return false;
         }else{
             String consulta = "update usuarios set puntos = puntos - ?  where username = ?;";
-            db.rawQuery(consulta,
+            db.execSQL(consulta,
                     new String[]{String.valueOf(a.getInt(0)),usuario});
             return true;
         }
+    }
+    public int getSaldo(String usuario){
+        Cursor c = db.query("usuarios",new String[]{"puntos"},"username = ?",new String[]{usuario},
+                null,null,null);
+        c.moveToFirst();
+        return c.getInt(0);
     }
 
 /*
