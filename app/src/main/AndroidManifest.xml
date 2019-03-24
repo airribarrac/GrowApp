@@ -34,11 +34,12 @@
             android:name=".ShowPlant"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".showrecycle" />
-        <activity
-            android:name=".Reciclaje2"
-            android:label="@string/title_activity_reciclaje2"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DetailActivity" />
+
+
+        <activity android:name=".Que_Reciclo"></activity>
+        <activity android:name=".ImageDetailsActivity"></activity>
+        <activity android:name=".DetailActivity"></activity>
+
     </application>
 
 </manifest>

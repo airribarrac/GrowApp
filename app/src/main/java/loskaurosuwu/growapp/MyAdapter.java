@@ -44,7 +44,7 @@ public class MyAdapter extends RecyclerView.Adapter<FlowerViewHolder> {
                 Intent mIntent = null;
                 if(position==0) mIntent = new Intent(mContext, CatalogoPlantas.class);
                 if(position==1) mIntent = new Intent(mContext, HouseForm2.class);
-                if(position==2) mIntent = new Intent(mContext, Reciclaje2.class);
+                if(position==2) mIntent = new Intent(mContext, Que_Reciclo.class);
                 if(position==4) mIntent = new Intent(mContext, Quimicos.class);
 
                 mIntent.putExtra("Title", mFlowerList.get(holder.getAdapterPosition()).getFlowerName());
