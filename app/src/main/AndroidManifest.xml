@@ -27,10 +27,9 @@
             android:label="@string/title_activity_catalogo_plantas"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ShowPlant" />
-        <activity
-            android:name=".Reciclaje2"
-            android:label="@string/title_activity_reciclaje2"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Que_Reciclo"></activity>
+        <activity android:name=".ImageDetailsActivity"></activity>
+
     </application>
 
 </manifest>
