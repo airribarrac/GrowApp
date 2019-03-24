@@ -153,7 +153,10 @@ public class DBHelper {
         return db.query(DATABASE_TABLE,new String[]{NOMBRE,CNT,IMG_F,REGADO,TEMP,LUZ,AMBI},
                 FILAID+"= ?",new String[]{String.valueOf(id)},null,null,null);
     }
-
+    public void agregarSaldo(String usuario,int cantidad){
+        String consulta = "update usuarios set puntos = puntos + ? where username = ?;";
+        db.rawQuery(consulta,new String[]{String.valueOf(cantidad),usuario});
+    }
     public boolean comprarPlanta(String usuario,int plantID){
         Cursor a = db.query("plantas",new String[]{PRECIO},
                 FILAID+"= ?",new String[]{String.valueOf(plantID)},null,null,null);
