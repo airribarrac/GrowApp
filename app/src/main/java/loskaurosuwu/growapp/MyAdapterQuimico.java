@@ -16,12 +16,12 @@ import java.util.List;
  * Created by abdalla on 1/12/18.
  */
 
-public class MyAdapter extends RecyclerView.Adapter<FlowerViewHolder> {
+public class MyAdapterQuimico extends RecyclerView.Adapter<FlowerViewHolder> {
 
     private Context mContext;
     private List<FlowerData> mFlowerList;
 
-    MyAdapter(Context mContext, List<FlowerData> mFlowerList) {
+    MyAdapterQuimico(Context mContext, List<FlowerData> mFlowerList) {
         this.mContext = mContext;
         this.mFlowerList = mFlowerList;
     }
@@ -39,13 +39,12 @@ public class MyAdapter extends RecyclerView.Adapter<FlowerViewHolder> {
         holder.mCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Intent mIntent = new Intent(mContext, DetailActivity.class);
+                Intent mIntent = new Intent(mContext, DetailActivity.class);
 
-                Intent mIntent = null;
-                if(position==0) mIntent = new Intent(mContext, CatalogoPlantas.class);
-                if(position==1) mIntent = new Intent(mContext, HouseForm2.class);
-                if(position==2) mIntent = new Intent(mContext, Reciclaje2.class);
-                if(position==4) mIntent = new Intent(mContext, Quimicos.class);
+                //Intent mIntent = null;
+                //if(position==0) mIntent = new Intent(mContext, CatalogoPlantas.class);
+                //if(position==1) mIntent = new Intent(mContext, HouseForm2.class);
+                //if(position==2) mIntent = new Intent(mContext, Reciclaje2.class);
 
                 mIntent.putExtra("Title", mFlowerList.get(holder.getAdapterPosition()).getFlowerName());
                 mIntent.putExtra("Description", mFlowerList.get(holder.getAdapterPosition()).getFlowerDescription());
@@ -61,13 +60,13 @@ public class MyAdapter extends RecyclerView.Adapter<FlowerViewHolder> {
     }
 }
 
-class FlowerViewHolder extends RecyclerView.ViewHolder {
+class FlowerViewHolderQuimico extends RecyclerView.ViewHolder {
 
     ImageView mImage;
     TextView mTitle;
     CardView mCardView;
 
-    FlowerViewHolder(View itemView) {
+    FlowerViewHolderQuimico(View itemView) {
         super(itemView);
 
         mImage = itemView.findViewById(R.id.ivImage);

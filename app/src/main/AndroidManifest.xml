@@ -12,9 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Quimicos"
+            android:label="@string/title_activity_quimicos"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".HouseForm2"
             android:label="@string/title_activity_house_form2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +30,15 @@
             android:name=".CatalogoPlantas"
             android:label="@string/title_activity_catalogo_plantas"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ShowPlant" />
+        <activity
+            android:name=".ShowPlant"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".showrecycle" />
         <activity
             android:name=".Reciclaje2"
             android:label="@string/title_activity_reciclaje2"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".DetailActivity" />
     </application>
 
 </manifest>

@@ -31,22 +31,22 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(mGridLayoutManager);
 
         mFlowerList = new ArrayList<>();
-        mFlowerData = new FlowerData("Benceno", getString(R.string.description_flower_rose),
+        mFlowerData = new FlowerData("Catálogo", getString(R.string.description_flower_rose),
                 R.drawable.plantas);
         mFlowerList.add(mFlowerData);
-        mFlowerData = new FlowerData("Formaldehído", getString(R.string.description_flower_carnation),
+        mFlowerData = new FlowerData("Datos hogar", getString(R.string.description_flower_carnation),
                 R.drawable.hogar);
         mFlowerList.add(mFlowerData);
-        mFlowerData = new FlowerData("Cloroetileno", getString(R.string.description_flower_tulip),
+        mFlowerData = new FlowerData("Qué reciclar", getString(R.string.description_flower_tulip),
                 R.drawable.reci);
         mFlowerList.add(mFlowerData);
-        mFlowerData = new FlowerData("Xileno", getString(R.string.description_flower_daisy),
+        mFlowerData = new FlowerData("Recicla", getString(R.string.description_flower_daisy),
                 R.drawable.solicita);
         mFlowerList.add(mFlowerData);
-        mFlowerData = new FlowerData("Tolueno", getString(R.string.description_flower_sunflower),
+        mFlowerData = new FlowerData("Químicos", getString(R.string.description_flower_sunflower),
                 R.drawable.quimicos);
         mFlowerList.add(mFlowerData);
-        mFlowerData = new FlowerData("Amoniaco", getString(R.string.description_flower_daffodil),
+        mFlowerData = new FlowerData("Puntos de reciclaje", getString(R.string.description_flower_daffodil),
                 R.drawable.puntos);
         mFlowerList.add(mFlowerData);
 

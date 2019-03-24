@@ -13,4 +13,5 @@
 </string>
     <string name="description_flower_sunflower">El tolueno se usa para hacer químicos (ej benceno, disocianato de tolueno, ácido benzoico), explosivos, tintes y muchos otros compuestos. Se usa como solvente para tintas, pinturas, laqueadores, resinas, limpiadores, pegamentos y adhesivos. Se encuentra en la gasolina y combustible de aviones.</string>
     <string name="description_flower_daffodil">Se encuentra en limpiadores de ventanas, ceras para pisos, sales aromáticas y fertilizantes. Los síntomas asociados con la exposición a corto plazo incluyen: irritación de los ojos, tos, dolor de garganta.</string>
+    <string name="title_activity_quimicos">Quimicos</string>
 </resources>
