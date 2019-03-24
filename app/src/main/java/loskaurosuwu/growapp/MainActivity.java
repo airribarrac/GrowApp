@@ -75,13 +75,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button request = findViewById(R.id.reciclajeOP);
-        request.setOnClickListener(new View.OnClickListener() {
+        Button kreciclo = findViewById(R.id.reciclajeOP);
+        kreciclo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                catalogClick();
+                krecicloClick();
             }
         });
+
 
     }
     public void catalogButtonClick(){
@@ -95,8 +96,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void catalogClick(){
-        Intent i = new Intent(this,Reciclaje2.class);
+    public void krecicloClick(){
+        Intent i = new Intent(this,Que_Reciclo.class);
         startActivity(i);
     }
     */
