@@ -35,7 +35,7 @@ public class CatalogoPlantas extends AppCompatActivity {
                     v.setLayoutParams(
                             new LinearLayout.LayoutParams(
                                     ViewGroup.LayoutParams.MATCH_PARENT,
-                                    5
+                                    3
                             )
                     );
                     v.setBackgroundColor(Color.parseColor("#B3B3B3"));

@@ -22,7 +22,7 @@ public class DBHelper {
     // Nombre de la base de datos, y tabla asociada
     private static final String DATABASE_NAME = "MiDB";
     private static final String DATABASE_TABLE = "plantas";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
     // Las constantes que representan las columnas de la tabla
     private static final String FILAID = "_id";
     private static final String NOMBRE = "nombre";
@@ -54,7 +54,10 @@ public class DBHelper {
             LUZ + " text not null, " +
             AMBI + " text not null, " +
             PRECIO + " integer not null," +
-            BENCENO + " text not null );";
+            BENCENO + " text not null );" +
+            "create table usuarios(" +
+            "username text primary key," +
+            "puntos integer default 0 not null);";
     private final Context contexto; // Contexto de la aplicacion
     private DatabaseHelper Helper; // Clase interna para acceso a base de datos SQL
     private SQLiteDatabase db; // La base de datos SQL
@@ -108,6 +111,9 @@ public class DBHelper {
                     cv.put(PRECIO,partido[13]);
                     db.insert(DATABASE_TABLE, null, cv);
                 }
+                ContentValues val = new ContentValues();
+                val.put("username","juanito");
+                db.insert("usuarios",null,val);
             }
             catch(SQLException e) {
                 e.printStackTrace();
@@ -146,6 +152,23 @@ public class DBHelper {
         Log.i("busco","una "+id);
         return db.query(DATABASE_TABLE,new String[]{NOMBRE,CNT,IMG_F,REGADO,TEMP,LUZ,AMBI},
                 FILAID+"= ?",new String[]{String.valueOf(id)},null,null,null);
+    }
+
+    public boolean comprarPlanta(String usuario,int plantID){
+        Cursor a = db.query("plantas",new String[]{PRECIO},
+                FILAID+"= ?",new String[]{String.valueOf(plantID)},null,null,null);
+        Cursor b = db.query("usuarios", new String[]{"puntos"},
+                "username = ?",new String[]{usuario},null,null,null);
+        a.moveToFirst();
+        b.moveToFirst();
+        if(a.getInt(0)>b.getInt(0)){
+            return false;
+        }else{
+            String consulta = "update usuarios set puntos = puntos - ?  where username = ?;";
+            db.rawQuery(consulta,
+                    new String[]{String.valueOf(a.getInt(0)),usuario});
+            return true;
+        }
     }
 
 /*
