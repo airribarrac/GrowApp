@@ -35,6 +35,12 @@ public class ShowPlant extends AppCompatActivity {
         cnt.setText(c.getString(1));
         TextView regado = findViewById(R.id.Regado);
         regado.setText("Regado "+c.getString(3)+".");
+        TextView luz = findViewById(R.id.Luz);
+        luz.setText("Luz: "+c.getString(5)+".");
+        TextView temp = findViewById(R.id.Temperatura);
+        temp.setText("Temperatura: "+c.getString(4)+"°C");
+        TextView lugar = findViewById(R.id.Lugar);
+        lugar.setText(c.getString(6));
 
     }
 }

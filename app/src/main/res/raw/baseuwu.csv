@@ -1,10 +1,10 @@
-1;Peace Lily;Spathiphyllum;peacelily;si;si;si;si;si;poco frecuente;16-32;luz artificial;Indoors
-2;Chrysanthemum;Chrysanthemum Indicum;crisentemo;si;si;si;si;si;poco frecuente;5-45;solo o luz artificial;Outdoors
-3;English Ivy;Hedera Helix;englisivy;si;si;si;si;no;poco frecuente;5-30;luz artificial;Indoors
-4;Snake Plant;Sansevieria Laurentii;snakeplant;si;si;si;si;no;poco frecuente;5-45;luz artificial;Indoors
-5;Red-edged Dracaena;Dracaena Marginata;rededged;si;si;si;si;no;poco frecuente;5-45;luz artificial;Indoors
-6;Bamboo Palm;Chamaedorea Seifrizii;bamboo;si;si;si;si;no;frecuente;10-35;luz artficial;Indoors
-7;Money Plant;Epipremnum Aureum;money;si;si;no;si;no;poco frecuente;15-45;luz artificial;Indoors
-8;Flamingo Lily;Anthurium Andraeanum;flamingo;no;si;no;si;si;poco frecuente;12-30;luz artificial;Indoors
-9;Janet Craig;Dracaena Deremensis “Janet Craig”;janet;si;si;si;no;no;poco frecuente;5-45;luz artificial;Indoors
-10;Warneckei;Dracaena Deremensis “Warneckei”;warneckei;si;si;si;no;no;poco frecuente;5-45;luz artificial;Indoors
+1;Peace Lily;Spathiphyllum;peacelily;si;si;si;si;si;poco frecuente;16-32;luz artificial;Indoors;490
+2;Chrysanthemum;Chrysanthemum Indicum;crisentemo;si;si;si;si;si;poco frecuente;5-45;solo o luz artificial;Outdoors;360
+3;English Ivy;Hedera Helix;englisivy;si;si;si;si;no;poco frecuente;5-30;luz artificial;Indoors;490
+4;Snake Plant;Sansevieria Laurentii;snakeplant;si;si;si;si;no;poco frecuente;5-45;luz artificial;Indoors;350
+5;Red-edged Dracaena;Dracaena Marginata;rededged;si;si;si;si;no;poco frecuente;5-45;luz artificial;Indoors;470
+6;Bamboo Palm;Chamaedorea Seifrizii;bamboo;si;si;si;si;no;frecuente;10-35;luz artficial;Indoors;450
+7;Money Plant;Epipremnum Aureum;money;si;si;no;si;no;poco frecuente;15-45;luz artificial;Indoors;470
+8;Flamingo Lily;Anthurium Andraeanum;flamingo;no;si;no;si;si;poco frecuente;12-30;luz artificial;Indoors;350
+9;Janet Craig;Dracaena Deremensis “Janet Craig”;janet;si;si;si;no;no;poco frecuente;5-45;luz artificial;Indoors;410
+10;Warneckei;Dracaena Deremensis “Warneckei”;warneckei;si;si;si;no;no;poco frecuente;5-45;luz artificial;Indoors;330
