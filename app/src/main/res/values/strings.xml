@@ -3,4 +3,14 @@
     <string name="title_activity_catalogo_plantas">CatalogoPlantas</string>
     <string name="title_activity_reciclaje2">Reciclaje2</string>
     <string name="title_activity_house_form2">HouseForm2</string>
+    <string name="description_flower_rose">Se usa para hacer plásticos, resinas, lubricantes, detergentes y medicamentos, y se encuentra en el humo del tabaco, pegamento y cera para muebles. Los síntomas asociados con la exposición a corto plazo incluyen: irritación de los ojos, somnolencia, mareos, dolor de cabeza, aumento de la frecuencia cardíaca, confusión y, en algunos casos, puede causar inconsciencia.
+</string>
+    <string name="description_flower_carnation">Se encuentra en bolsas de papel, papeles encerados, pañuelos faciales, toallas de papel, paneles de madera contrachapada y telas sintéticas. Los síntomas asociados con la exposición a corto plazo incluyen: irritación de nariz, boca y garganta y, en casos graves, hinchazón de la laringe y los pulmones.
+</string>
+    <string name="description_flower_tulip">Se encuentra en tintas de impresión, pinturas, lacas, barnices, adhesivos y removedores de pintura. Los síntomas asociados con la exposición a corto plazo incluyen: excitación, mareos, dolor de cabeza, náuseas y vómitos, seguidos de somnolencia y coma.
+</string>
+    <string name="description_flower_daisy">Se encuentra en caucho, cuero, humo de tabaco y escape de vehículos. Los síntomas asociados con la exposición a corto plazo incluyen: irritación de la boca y garganta, mareos, dolor de cabeza, confusión, problemas cardíacos, daño al hígado y riñón y coma.
+</string>
+    <string name="description_flower_sunflower">El tolueno se usa para hacer químicos (ej benceno, disocianato de tolueno, ácido benzoico), explosivos, tintes y muchos otros compuestos. Se usa como solvente para tintas, pinturas, laqueadores, resinas, limpiadores, pegamentos y adhesivos. Se encuentra en la gasolina y combustible de aviones.</string>
+    <string name="description_flower_daffodil">Se encuentra en limpiadores de ventanas, ceras para pisos, sales aromáticas y fertilizantes. Los síntomas asociados con la exposición a corto plazo incluyen: irritación de los ojos, tos, dolor de garganta.</string>
 </resources>

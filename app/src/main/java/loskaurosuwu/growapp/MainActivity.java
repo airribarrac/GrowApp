@@ -1,14 +1,59 @@
 package loskaurosuwu.growapp;
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity {
 
+
+
+    Toolbar mToolbar;
+    RecyclerView mRecyclerView;
+    List<FlowerData> mFlowerList;
+    FlowerData mFlowerData;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        //mToolbar = findViewById(R.id.toolbar);
+        //mToolbar.setTitle("Sustancias químicas");
+        mRecyclerView = findViewById(R.id.recyclerview);
+        GridLayoutManager mGridLayoutManager = new GridLayoutManager(MainActivity.this, 2);
+        mRecyclerView.setLayoutManager(mGridLayoutManager);
+
+        mFlowerList = new ArrayList<>();
+        mFlowerData = new FlowerData("Benceno", getString(R.string.description_flower_rose),
+                R.drawable.plantas);
+        mFlowerList.add(mFlowerData);
+        mFlowerData = new FlowerData("Formaldehído", getString(R.string.description_flower_carnation),
+                R.drawable.hogar);
+        mFlowerList.add(mFlowerData);
+        mFlowerData = new FlowerData("Cloroetileno", getString(R.string.description_flower_tulip),
+                R.drawable.reci);
+        mFlowerList.add(mFlowerData);
+        mFlowerData = new FlowerData("Xileno", getString(R.string.description_flower_daisy),
+                R.drawable.solicita);
+        mFlowerList.add(mFlowerData);
+        mFlowerData = new FlowerData("Tolueno", getString(R.string.description_flower_sunflower),
+                R.drawable.quimicos);
+        mFlowerList.add(mFlowerData);
+        mFlowerData = new FlowerData("Amoniaco", getString(R.string.description_flower_daffodil),
+                R.drawable.puntos);
+        mFlowerList.add(mFlowerData);
+
+        MyAdapter myAdapter = new MyAdapter(MainActivity.this, mFlowerList);
+        mRecyclerView.setAdapter(myAdapter);
+    }
+    /*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,4 +99,5 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,Reciclaje2.class);
         startActivity(i);
     }
+    */
 }
