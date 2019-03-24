@@ -39,6 +39,9 @@
         <activity android:name=".Que_Reciclo"></activity>
         <activity android:name=".ImageDetailsActivity"></activity>
         <activity android:name=".DetailActivity"></activity>
+        <activity android:name=".Solicitud_reciclaje"></activity>
+        <activity android:name=".DetailActivity_Solicitud"></activity>
+
 
     </application>
 
